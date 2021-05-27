@@ -9,7 +9,7 @@ function ListarInvestimento() {
 
     const [investimentos, setInvestimento] = useState([]) //vetor de pessoas inicialmente vazio
 
-    function remove(record){
+    function remove(record){ //record
         message.success('Investimento removido com sucesso!');
     }
 
@@ -40,7 +40,7 @@ function ListarInvestimento() {
                             <Column title="Quantidade de Cotas" dataIndex="quantidadeCotas" key="quantidadeCotas" />
                             <Column title="Data da Compra" dataIndex="dataCompra" key="dataCompra" />
                             <Column title="Remover" key="atualizar"
-                                render={(text, record) => (<Button onClick={() => remove(record)}
+                                render={(text, record) => (<Button onClick={() => remove(record)}//record
                                     type="primary"> Remover </Button>)}
                             />
                         </Table>

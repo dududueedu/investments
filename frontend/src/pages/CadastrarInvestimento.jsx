@@ -1,6 +1,6 @@
 function CadastrarInvestimento() {
     return (
-        <div></div>
+        <div> Cadastrar </div>
     )
 }
 
